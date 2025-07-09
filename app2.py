@@ -14,7 +14,7 @@ import plotly.graph_objects as go
 load_dotenv()
 
 # Set page config FIRST
-st.set_page_config(page_title="RecruitIQ", page_icon="RIQ-BG.png", layout="wide")
+st.set_page_config(page_title="RecruitIQ", page_icon="static\RIQ-BG.png", layout="wide")
 
 tab1, tab2 = st.tabs(["Resume Analyzer", "Employee Sentiment Analysis"])
 
@@ -81,7 +81,7 @@ with tab1:
 
     # Sidebar with branding and info
     with st.sidebar:
-        st.image("RecruitIQ.png", use_container_width=True)
+        st.image("static\RecruitIQ.png", use_container_width=True)
         st.header("About")
         st.markdown("This **Advanced HR Recruiting System** helps you analyze resumes against job descriptions and Employee Sentiment Analysis using AI-powered insights.")
         st.markdown("---")
@@ -147,7 +147,7 @@ with tab1:
                     response_text = get_response(input_text, pdf_content, prompt1)
                     st.success("Analysis Completed ✅")
                     # Extract compatibility score using regex
-                    match = re.search(r"\*\*Compatibility Score:\*\*\s*(\d+)/100", response_text)
+                    match = re.search(r"\*\*Compatibility Score:\*\*\s*(\d+)/100\*\*", response_text)
                     compatibility_score = int(match.group(1)) if match else 0
 
                     # Display pie chart of compatibility score
