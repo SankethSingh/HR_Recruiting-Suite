@@ -74,7 +74,9 @@ streamlit run app2.py
 ## Demo
 
 See demo below:
-
+[![RecruitIQ]          // Title
+(https://github.com/SankethSingh/HR_Recruiting-Suite/blob/master/static/Dash_Resume.png)] // Thumbnail
+(https://github.com/SankethSingh/HR_Recruiting-Suite/blob/master/static/demo_1.mp4)    // Video Link
 https://github.com/SankethSingh/HR_Recruiting-Suite/blob/master/static/demo_1.mp4
 
 
